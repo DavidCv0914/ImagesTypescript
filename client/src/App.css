@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+form{
+  width: 40vw;
+  height: 40vh;
+  margin-left: 30vw;
+  margin-bottom: 5vh;
+  margin-top: 5vh;
+  padding: 2.5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+}
+
+form input{
+  width: 60%;
+  height: 10%;
+  border-radius: 10px;
+  border: solid 2px #c4c4c4;
+  padding-left: 1%;
+}
+
+form button{
+  width: 15%;
+  cursor: pointer;
+  background: #009f03;
+  padding: 1.5%;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  font-size: 100%;
+}
+
+section{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.images{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2vh;
+  width: 27.5%;
+  height: max-content;
+  padding: 1%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin-bottom: 5%;
+  text-align: center;
+}
+
+.images img{
+  width: 100%;
+  height: 40vh;
+  border-radius: 15px; 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.images h4{
+  font-weight: 900;
+}
+
+.images span{
+  width: 15%;
+  cursor: pointer;
+  background: #cb0000;
+  padding: 1.5%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.boton2-modal{
+  display: none;
+}
+.boton2-modal label{
+ display:none
+}
+.boton2-modal label:hover{
+ display: none;
+}
+
+#btn2-modal{
+  display: none;
+}
+.container2-modal{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0; left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+#btn2-modal:checked ~ .container2-modal{
+  display: flex;
+}
+.content2-modal{
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #043248;
+}
+.content2-modal h2{
+  margin-bottom: 25px;
+
+}
+.content2-modal p{
+  padding: 15px 0px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  padding: 20px;
+}
+.content2-modal p span{
+ margin-top: 50px;
+ height: 40px;
+}
+.content2-modal .btn2-cerrar{
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  justify-content: flex-end;
+}
+.content2-modal .btn2-cerrar label{
+  padding: 7px 10px;
+  background-color: #5488a3;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+.content2-modal .btn2-cerrar label:hover{
+  background-color:#185E83;
+}
+.input-modal{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap:2vh;
+}
+.input-modal input{
+  width: 50%;
+  height: 5vh;
+  font-size: 110%;
+}
+.cerrar2-modal{
+  width:100%;
+  height: 100vh;
+  position: absolute;
+  top:0; left: 0;
+  z-index: -1;
+}
+.actualizar{
+  text-align: center;
+  width: 15%;
+  cursor: pointer;
+  background: #cb0000;
+  padding: 1.5%;
+  color: #ffffff;
+  border-radius: 5px;
+}
+@media screen and (max-width:800px) {
+  .content2-modal{
+      width: 90%;
+  }
+}
